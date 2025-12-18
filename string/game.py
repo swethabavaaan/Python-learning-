@@ -18,8 +18,8 @@ if player<1 or player>3:
 computerchoice = random.choice("123")
 computer= int(computerchoice)
 print("")
-print( "your choice  "+ str(RPS(player)))
-print("python choice is "+str(RPS(computer)))
+print("your choice is " + str(RPS(player)).replace('RPS.',' '))
+print("python choice is " + str(RPS(computer)).replace('RPS.',' '))
 if (player == computer):
     print("Match Draw😒")
 elif(player == 1 and computer == 2):
